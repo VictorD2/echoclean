@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --marron-claro: #363636;
+  --verde-oscuro: #00852c;
+  --verde-claro: #06a53b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+footer {
+  background: var(--marron-claro);
+  color: #ffffff;
+  padding: 8rem 5rem;
+}
+.contenedor__video .video__reproductor {
+  width: 40.375rem;
+  height: 37.78rem;
+}
+.video__reproductor {
+  width: 40.375rem;
+  height: 30.78rem;
+}
+.loadPerfil {
+  width: 100%;
+  border-style: solid;
+  border-color:#000;
+}
+.cuadroEditPerfil {
+  text-align: center;
+  border: 2px dashed #7BC427;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.link-normal {
+  color: var(--verde-oscuro);
+}
+
+.link-normal:hover {
+  color: var(--verde-claro);
+}
+.title-normal {
+  color: var(--marron-claro);
+  transition: all 0.3s;
+}
+
+.title-normal:hover {
+  color: var(--verde-oscuro);
+  transition: all 0.3s;
+}
+.boton-primario {
+  background: var(--verde-oscuro) !important;
+  color: #ffffff !important;
+}
+
+.boton-primario:hover {
+  background: var(--verde-claro) !important;
+}
+
+.btn-size {
+  width: 13rem;
+}
+/* START SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--verde-claro);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verde-oscuro);
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem;
+  }
+
+  .btn-size {
+    width: 100%;
+  }
 }
